@@ -1,0 +1,146 @@
+import math
+
+c = int(input("what is your age?"))
+if c == 5:
+    print('try again')
+else:
+    print('nice job, goodbye')
+
+
+try:
+    a = int(input("type a number:"))
+    b = int(input("type another:"))
+    print(a / b)
+except(ZeroDivisionError, ValueError):
+    print("Invalid input. Both numbers must be integers, and the second cannot be zero")
+
+def add(x, y):
+    """
+    Returns x + y
+    :param x: int
+    :param y: int
+    :return: int sum of x and y
+    """
+    return x + y
+
+desk = ["Cup", "Water bottle", "Calculator", "Phone", "Chapstick"]
+
+guess = input("Name something on my desk right now")
+
+if guess in desk:
+    print("you're right")
+else:
+    print("try again")
+
+raffle_prizes = {"1": "$20", "2": "nothing", "3": "$500", "4": "nothing", "5": "$50"}
+g = input("Guess a number between 1 and 5")
+
+if g in raffle_prizes:
+    guess = raffle_prizes[g]
+    print("You won " + guess + "!")
+else:
+    print("Invalid input. Try again")
+
+my_info = {"height":"70 inches", "color":"dark green", "author":"Aldous Huxley"}
+lookup = input("Type in height, color, or author")
+
+if lookup in my_info:
+    answer = my_info[lookup]
+    print(answer)
+else:
+    print("invalid input")
+
+your_name = input("Enter your name")
+your_birthyear = input("Enter the year you were born")
+
+story = "{} was born in the year {}.".format(your_name, your_birthyear)
+print(story)
+
+new_phrase = "Bahul is a bitch"
+your_name = input("Enter your name")
+
+your_phrase = new_phrase.replace("Bahul", your_name)
+print(your_phrase)
+
+noun_one = input("Insert a noun")
+noun_two = input("Insert the name of a person")
+phrase = "Yesterday I wrote a {}. I sent it to {}!".format(noun_one, noun_two)
+print(phrase)
+
+x = int(input("give me a number"))
+if x < 10:
+    print("your variable is less than 10")
+else:
+    print("your variable is greater than or equal to 10")
+
+
+x = int(input("give me a number"))
+if x <= 10:
+    print("your number is less than or equal to 10")
+elif 10 < x <= 25:
+    print("your number is between 10 and 25")
+elif x > 25:
+    print("your number is greater than 25")
+
+y = int(input("give me a number"))
+z = int(input("give me another number"))
+
+print(y // z)
+elif a >= 50:
+    print("you are old")
+
+def squared():
+    x = int(input("give me a number"))
+    print(x * x)
+
+squared()
+
+def string(x):
+
+string("fart")
+
+def five(a, b, c, d = 2, e = 6):
+    print(a + b + c + d + e)
+
+five(1, 1, 1)
+
+def first(x):
+    return x / 2
+
+
+y = first(2)
+z = second(y)
+
+print(z)
+
+from math import float
+
+def convert(string):
+    try:
+        return float(string)
+    except ValueError:
+        print("Invalid input, could not convert to a float.")
+
+x = convert("43")
+print(x)
+
+my_musicians = ["Madeon", "Tame Impala", "Martin Garrix"]
+
+my_homes = {"College Park": (38.9, 76.9), "Pine Township": (40.6, 80.0)}
+print(my_homes)
+
+personal_info = {"Height": 70, "Weight": 152, "Color": "Sand", "Author": "Aldous Huxley"}
+print(personal_info)
+
+def nick():
+    x = input("Type 'Height', 'Weight', 'Color', or 'Author' to learn more about me")
+    if x in personal_info:
+        print(personal_info[x])
+    else:
+        print("Not found")
+
+nick()
+
+artists_songs = {"Kendrick Lamar": "Rich Spirit", "Madeon": "Mania", "Martin Garrix": "Good Morning"}
+print(artists_songs)
+
